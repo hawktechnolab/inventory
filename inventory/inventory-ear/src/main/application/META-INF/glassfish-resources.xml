@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+<resources>
+    <jdbc-connection-pool
+        name="jdbc/inventory_pool"
+        res-type="javax.sql.XADataSource"
+        datasource-classname="org.postgresql.xa.PGXADataSource"
+        pool-resize-quantity="50"
+        max-pool-size="200"
+        steady-pool-size="200"
+        statement-timeout-in-seconds="30" >
+        <property name="User" value="postgres"></property>
+        <property name="Password" value="admin"></property>
+        <property name="portNumber" value="5432"></property>
+        <property name="dataBaseName" value="inventory"></property>
+        <property name="serverName" value="localhost"></property>
+    </jdbc-connection-pool>
+    <jdbc-resource pool-name="jdbc/inventory_pool" jndi-name="jdbc/inventorydb"></jdbc-resource>
+</resources>
