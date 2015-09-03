@@ -1,0 +1,6 @@
+Prerequisite to run this application is as follows:
+1) Glassfish 4.x
+2) Postgresql
+3) Netbeans (Optional)
+4) Maven
+5) Git client (It comes configured with with netbeans)
