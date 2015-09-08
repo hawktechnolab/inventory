@@ -3,17 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.inventory.ejb.session.stateless;
+package com.hawk.inventory.ejb.entity;
 
-import javax.ejb.Local;
+import com.hawk.core.entity.EntityRemote;
+import com.hawk.inventory.entity.BrandEntity;
 
 /**
  *
  * @author Nisheeth Shah
  */
-@Local
-public interface NewSessionBeanLocal {
-
-    String sayHello();
-    
+@javax.ejb.Remote
+public interface BrandEntityFacadeRemote extends EntityRemote<BrandEntity> {
 }

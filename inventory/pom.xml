@@ -12,5 +12,6 @@
     <module>inventory-ejb</module>
     <module>inventory-api</module>
     <module>inventory-entity</module>
+    <module>ejb-core</module>
   </modules>
 </project>
