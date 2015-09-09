@@ -5,7 +5,7 @@
  */
 package com.hawk.inventory.ejb.local;
 
-import com.hawk.core.entity.EntityRemote;
+import com.hawk.core.entity.EntityLocal;
 import com.hawk.inventory.entity.BrandEntity;
 import javax.ejb.Local;
 
@@ -14,5 +14,5 @@ import javax.ejb.Local;
  * @author Nisheeth Shah
  */
 @Local
-public interface BrandEntityFacadeLocal extends EntityRemote<BrandEntity> {
+public interface BrandEntityFacadeLocal extends EntityLocal<BrandEntity> {
 }

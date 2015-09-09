@@ -26,4 +26,6 @@ public interface EntityRemote<T> {
     List<T> findRange(int[] range);
 
     int count();
+    
+    List<T> findByColumn(String attributeName, Object value);
 }
