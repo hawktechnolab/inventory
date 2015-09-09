@@ -6,8 +6,6 @@
 package com.hawk.util.ejb;
 
 import com.hawk.core.entity.EntityRemote;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -21,7 +19,7 @@ public class LookupUtil {
     public static EntityRemote lookupRemote(String ejb, String remoteInterface) {
         try {
             Context c = new InitialContext();
-            return (EntityRemote) c.lookup("java:global/Counselling/Counselling-ejb/" + ejb + "!" + remoteInterface);
+            return (EntityRemote) c.lookup("java:global/inventory-ear/inventory-ejb-1.0-SNAPSHOT/" + ejb + "!" + remoteInterface);
         } catch (NamingException ne) {
             return null;
         }

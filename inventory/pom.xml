@@ -13,5 +13,6 @@
     <module>inventory-api</module>
     <module>inventory-entity</module>
     <module>ejb-core</module>
+    <module>logger</module>
   </modules>
 </project>
