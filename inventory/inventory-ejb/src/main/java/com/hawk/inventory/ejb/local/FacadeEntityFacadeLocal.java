@@ -3,15 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.hawk.inventory.ejb.entity;
+package com.hawk.inventory.ejb.local;
 
 import com.hawk.core.entity.EntityRemote;
-import com.hawk.inventory.entity.BrandEntity;
+import com.hawk.inventory.entity.FacadeEntity;
+import javax.ejb.Local;
 
 /**
  *
  * @author Nisheeth Shah
  */
-@javax.ejb.Remote
-public interface BrandEntityFacadeRemote extends EntityRemote<BrandEntity> {
+@Local
+public interface FacadeEntityFacadeLocal extends EntityRemote<FacadeEntity> {
 }
