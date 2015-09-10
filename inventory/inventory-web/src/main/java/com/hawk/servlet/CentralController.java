@@ -1,11 +1,17 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Copyright (c) 2015 Hawk Technologies.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Hawk License
+ * which accompanies this distribution.
+ *
+ * Contributors:
+ *    Nisheeth Shah - initial API and implementation and/or initial documentation
  */
 package com.hawk.servlet;
 
 import com.hawk.inventory.delegate.FacadeEntityDelegate;
+import com.hawk.inventory.delegate.GenericEntityFacadeDelegate;
+import com.hawk.inventory.entity.BrandEntity;
 import com.hawk.log.Logger;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -48,7 +54,7 @@ public class CentralController extends HttpServlet {
 //            out.println("</body>");
 //            out.println("</html>");
             out.println(new FacadeEntityDelegate().count());
-            LOGGER.info("Holla");
+            out.println(new GenericEntityFacadeDelegate<BrandEntity>(BrandEntity.class).count());
         }
     }
 
