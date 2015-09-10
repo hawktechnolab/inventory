@@ -13,3 +13,7 @@ hs_err_pid*
 /inventory/inventory-ejb/target/
 /inventory/inventory-web/target/
 /inventory/inventory-ear/target/
+/inventory/ejb-core/target/
+/inventory/inventory-entity/target/
+/inventory/inventory-api/target/
+/inventory/logger/target/
